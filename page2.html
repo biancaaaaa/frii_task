@@ -26,52 +26,53 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="smallheader">
-    <div id="menudiv">
-        <div id="logos">
-            <img id="frii-logo" src="img/Logo-Header-1.png" alt="frii-logo">
-            <img id="globuzzer-logo" src="img/logo-gb-white.svg" alt="globuzzer-logo">
+<div id="wrapper">
+    <header class="smallheader">
+        <div id="menudiv">
+            <div id="logos">
+                <img id="frii-logo" src="img/Logo-Header-1.png" alt="frii-logo">
+                <img id="globuzzer-logo" src="img/logo-gb-white.svg" alt="globuzzer-logo">
+            </div>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Read more</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Read more</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-        </ul>
-    </div>
-</header>
+    </header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-5">
-            <h1>Your Cart</h1>
-            <hr>
-            <div id="cart">
-                <h5>TriLens</h5>
-                <img src="img/Box.jpg" alt="frii-box"><br>
-                <div class="row">
-                    <div class="col-sm-5">
-                        <label for="quantity">Quantity: </label>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h1>Your Cart</h1>
+                <hr>
+                <div id="cart">
+                    <h5>TriLens</h5>
+                    <img src="img/Box.jpg" alt="frii-box"><br>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="quantity">Quantity: </label>
+                        </div>
+                        <div class="col-sm-7">
+                            <input type="number" id="quantity">
+                        </div>
                     </div>
-                    <div class="col-sm-7">
-                        <input type="number" id="quantity">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5">
-                        <div>Price:</div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="sumPrice"><span id="price"></span> € + Shipping</div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div>Price:</div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="sumPrice"><span id="price"></span> € + Shipping</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-7">
-            <h1>Payment Options</h1>
-            <hr>
-            <div id="pay-method">
-                <h5><i class="fa fa-credit-card"></i> Credit Card</h5>
+            <div class="col-sm-7">
+                <h1>Payment Options</h1>
+                <hr>
+                <div id="pay-method">
+                    <h5><i class="fa fa-credit-card"></i> Credit Card</h5>
                     <div class="row">
                         <div class="col-sm-6">
                             <label for="card-nr">Card Number: </label>
@@ -84,7 +85,7 @@
                         <div class="col-sm-6">
                             <label for="ver-nr">Verification Number: </label>
                         </div>
-                            <div class="col-sm-6">
+                        <div class="col-sm-6">
                             <input type="text" id="ver-nr">
                         </div>
                     </div>
@@ -96,16 +97,16 @@
                             <input type="text" id="exp-date" placeholder="mm/yy">
                         </div>
                     </div>
-                <br>
-                <a class="buy-button" href="#">Buy now</a>
-                <br>
-                <div id="paypal"><i class="fa fa-paypal"></i> <a href="#"> Pay with PayPal</a></div>
+                    <br>
+                    <a class="buy-button" href="#">Buy now</a>
+                    <br>
+                    <div id="paypal"><i class="fa fa-paypal"></i> <a href="#"> Pay with PayPal</a></div>
+                </div>
             </div>
         </div>
     </div>
+    <footer></footer>
 </div>
-<footer></footer>
-
 
 </body>
 </html>

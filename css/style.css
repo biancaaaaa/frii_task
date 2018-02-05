@@ -2,15 +2,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
 
 .container {
+    position: relative;
     max-width: 750px;
     margin-top: 150px;
-    margin-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 .smallheader + .container {
@@ -140,23 +146,21 @@ header h2 {
     height: 230px;
 }
 
-.desc {
-    color: #4c4c4c;
-    font-size: 10px;
-}
-
 .pinkline {
     border-top: 1px solid #ff4169;
 }
 
+.desc {
+    font-size: 11px;
+}
+
 .costs {
-    color: #000;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 .button-row {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 18px;
 }
 
