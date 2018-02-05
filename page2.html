@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page 2</title>
+
+    <script src="https://use.fontawesome.com/2767afc8a5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/calc.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="smallheader">
+    <div id="menudiv">
+        <div id="logos">
+            <img id="frii-logo" src="img/Logo-Header-1.png" alt="frii-logo">
+            <img id="globuzzer-logo" src="img/logo-gb-white.svg" alt="globuzzer-logo">
+        </div>
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Read more</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <h1>Your Cart</h1>
+            <hr>
+            <div id="cart">
+                <h5>TriLens</h5>
+                <img src="img/Box.jpg" alt="frii-box"><br>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <label for="quantity">Quantity: </label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="number" id="quantity">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div>Price:</div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="sumPrice"><span id="price"></span> € + Shipping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <h1>Payment Options</h1>
+            <hr>
+            <div id="pay-method">
+                <h5><i class="fa fa-credit-card"></i> Credit Card</h5>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="card-nr">Card Number: </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="card-nr">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="ver-nr">Verification Number: </label>
+                        </div>
+                            <div class="col-sm-6">
+                            <input type="text" id="ver-nr">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="exp-date">Card expires on: </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="exp-date" placeholder="mm/yy">
+                        </div>
+                    </div>
+                <br>
+                <a class="buy-button" href="#">Buy now</a>
+                <br>
+                <div id="paypal"><i class="fa fa-paypal"></i> <a href="#"> Pay with PayPal</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+
+
+</body>
+</html>
